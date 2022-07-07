@@ -1,0 +1,281 @@
+body{
+  text-align: center;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+.top-container{
+  background-color: #e4f9f5;
+  padding-top: 6.5rem;
+}
+
+h1, h2{
+  color: #66bfbf;
+}
+
+h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;/* which is the saem as 90px*/
+  color: #66bfbf;
+}
+
+h2{
+  font-size: 2.5rem 
+}
+
+h2, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+  color: #11999e;
+}
+
+p {
+  line-height: 2;
+}
+
+hr{
+  width: 6%;
+  border: 10px dotted #c5f8f8;
+  border-bottom: none;
+}
+
+
+
+.pro{
+  text-decoration: underline;
+}
+
+.top-cloud{
+  position: absolute;
+  top: 5%;
+  right: 19%;
+}
+
+.bottom-cloud{
+  position: absolute;
+  right: 70%;
+}
+
+.profile{
+  width: 30%;
+  margin: 0 auto;
+}
+
+.initial-padding{
+  padding: 90px 15px;
+}
+
+.skill-img1,
+ .skill-img2{
+ width: 20%;
+}
+
+.skill-row{
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  gap: 25px;
+}
+
+.skill-row h3, .skill-row p{
+  text-align: left;
+}
+
+.skill-img2{
+  order: 1;
+}
+
+.skill-row:first-of-type{
+  margin-bottom: 5.625rem;
+}
+
+.contact{
+  width: 40%;
+  margin: auto;
+}
+
+.btn{
+  background-color: #11cdd4;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat" sans-serif;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.btn:hover{
+  background-color: #30e3cb;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+.bottom-container p{
+  color: #eee;
+  
+}
+
+.bottom-container a{
+  color: #11999e;
+  font-family: "Montserrat" sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.bottom-container a:hover{
+  color:#eee;
+}
+
+
+/* for exra Large Screen.=1261px */
+@media screen and (max-width: 78.813rem){
+  .skill-row{
+    width: 60%;
+  }
+}
+
+/* for large screen 1174px */
+@media screen and (max-width: 73.375rem){
+  .skill-row{
+    width: 65%;
+  }
+} 
+
+/* for large screen 1020px */
+@media screen and (max-width: 68.125rem){
+  .skill-row{
+    width: 90%;
+    font-size: 24px;
+  }
+
+  .profile{
+    /* display: inline-block; */
+   margin: auto;
+   width: 50%;
+   font-size: 30px;
+}
+
+/* for 820px */
+@media screen and (max-width: 51.25rem) {
+
+  .skill-row {
+    width: 80%;
+    flex-direction: column;
+  }
+
+
+  .contact{
+    width: 80%;
+  }
+
+  .profile{
+   width: 80%;
+  }
+
+  .skill-img1, .skill-img2{
+    width: 29%;
+    height: 15%;
+    margin: auto;
+  }
+
+  .skill-img2{
+    order: 0;
+  }
+
+  .mountain{
+    width:90% ;
+  }
+
+  .emma{
+    display: block;
+    width: 98%;
+    margin: auto;
+  }
+}
+
+
+/* at mobil view of 420px */
+@media screen and (max-width: 26.25rem){
+  .mountain{
+    display: block;
+    width: 100%;
+  }
+
+  .top-container{
+    position: relative;
+  }
+
+  .bottom-cloud{
+    left: 10%;
+    bottom: 27%;
+  }
+
+  h1{
+    margin: 50px 0;
+    font-size: 4.625rem;
+  }
+
+  .profile{
+    width: 90%;
+    font-size: 20px;
+    
+  }
+
+  .emma{
+    display: block;
+    width: 90%;
+  }
+
+  .skill-row{
+    font-size: 20px;
+    flex-direction: column;
+    width: 90%    
+  }
+
+  .skill-row h3{
+    text-align: center;
+  }
+
+  .skill-row p {
+    text-align: justify;
+     }
+
+  .skill-img2{
+    order: 0;
+  }
+
+  .skill-img1, .skill-img2{
+    width: 40%;
+    /* display: block;
+    margin: auto; */
+    align-self: center; /*same with the above*/
+  }
+
+  .contact{
+    width: 80%;
+  }
+
+}
+
+/* at mobil view of 320px */
+@media screen and (max-width:20rem){
+  h1{
+    font-size:2.5rem;
+   }
+
+  .skill-row{
+    font-size: 15px;
+  } 
+
+  .profile{
+    font-size: 15px;
+  }
+}
